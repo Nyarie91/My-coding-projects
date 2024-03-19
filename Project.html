@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Accomodation</title>
+    <style>
+      h1 {
+        text-align: center;
+      
+      }
+      h2 {
+        text-align: center;
+        color: chocolate;
+        font-size: 25px;
+        border: 3px solid chocolate;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: 200px;
+      }
+      h1 {
+        color: deeppink;
+        font-size: 30px;
+        font-weight: 200px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+        width: 600px;
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+        opacity: 0.7;
+        font-family: monospace;
+      }
+
+      li {
+        list-style-type: none;
+        margin: 0 auto;
+        text-align: center;
+        transition: all ease-in-out;
+        padding: 10px 0;
+        border-radius: 10px;
+        font-size: 18px;
+        max-width: 400px;
+        opacity: 0.9;
+      }
+      li:hover {
+        background: burlywood;
+      }
+
+      button {
+        color: deeppink;
+        display: block;
+        margin: 0 auto 25px auto;
+        padding: 15px 20px 15px 20px;
+        background:linear-gradient(line-height) white;
+        border: 2px solid deeppink;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+        font-size: 20px;
+      }
+
+      button:hover {
+        background: deeppink;
+        color: white;
+        cursor: pointer;
+      }
+      .container{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px 40px
+      }
+      a{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+
+      }
+
+    </style>
+ 
+  </head>
+  <body>
+
+    
+    <div class="container">
+     
+    <h1>The Guzzlers Accomodation in Mount Pleasant, Harare</h1>
+    <h2>A lavishly furnished apartment for women students!</h2>
+    <img
+      src="https://www.beyoo.it/app/uploads/2023/07/Frame-1-Room-scaled.jpg"
+      alt="student accomodation"
+      width="450"
+    />
+    <p> <strong> <span style="color: deeppink;"> A comfortable apartment  for rent </span> </strong> </p>
+    <hr>
+     <p>
+      This cozy place is ideal for women
+      students looking for accomodation in a prime neighbourhood.You will be
+      sharing the room with another student.</p>
+      <br>
+     <p>We are looking for people who can
+      keep the apartment clean and organized.
+    </p>
+  
+    <ul>
+      <em>
+        <li>The apartment has fast internet.</li>
+        <li>
+          You will have access to all common amenities such as gym,swimming pool
+          and rooftop lounge.
+        </li>
+        <li>It comes with solar installed.</li>
+        <li>The kitchen has refridgerators, electric stove and gas.</li>
+      </em>
+    </ul>
+
+    <strong>
+      <P>Please note that rental fees start from $100 per month. Any offer below $100 will be rejected.</P></strong>
+    
+        <a href="www.theguzzlers.co.zw" target="_blank" class="follow us on facebook" >Follow us on Facebook</a>
+        <br>
+   <button>Reserve your room</button>
+  <P>Website developed by Nyaradzai Masoso</P>
+  </div class=" container">
+  <script>
+    function reserveYourRoom() { 
+   let name = prompt ("What is your full name?");
+   let address =prompt ("What is your email address?");
+   let  fee= prompt ("What is your USD rental fee?");
+   let button = document.querySelector("Button");
+   
+   if ( fee>=100) {
+     alert ("Thank you for reserving your room,"+" "+ name+ "."+" " +"We'll contact you via email!")}
+   
+    else {alert ("Sorry,"+" "+ name+"."+ ""+"Try again next time!")
+   }}
+    let reserveYourRoomButton = document.querySelector("Button")
+    reserveYourRoomButton.addEventListener("click",reserveYourRoom )
+ 
+
+  </script>
+
+  </body>
+
+</html>
